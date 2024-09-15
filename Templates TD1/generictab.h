@@ -62,14 +62,12 @@
 
 // Liberation de la table
 #define maketabledelete(type) \
-  tabletype(type) tablefunction(type,_delete)(tabletype(type) table) {int i; \
-    if (table==NULL) return NULL;\
+  void tablefunction(type,_delete)(tabletype(type) table) {int i; \
+    if (table==NULL) return;\
     if (table->delete_data)\
       for(i=0;i<table->actual_size; i++)\
-        table->delete_data(table->data+i);\
-    free(table->data);\
-    free(table);\
-    return NULL;\
+        printf("Liberation du element %d, value %lf, pointer %p du tableau\n",i, table->data[i], (void *) &table->data[i]);\
+        table->delete_data(&table->data[i]);\
   }
 
 // Ajout d'un element

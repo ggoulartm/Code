@@ -28,8 +28,9 @@ int main() {
         t1=table_double_append(x,t1);
         break;
       case 2:
+        if(t1->actual_size==0){break;}
         x = random() % 100;
-        pos=random()%(t1->actual_size+1);
+        pos=random()%(t1->actual_size);
         printf("Insertion de %.2lf en position %d\n",x,pos);
         t1=table_double_insert_at(x,pos,t1);
         break;
@@ -43,5 +44,5 @@ int main() {
     table_double_printf(t1);
   }
   printf("Liberation du tableau\n");
-  t1=table_double_delete(t1);
+  table_double_delete(t1);
 }
