@@ -1,3 +1,13 @@
+/*
+Université Grenoble Alpes - Grenoble INP / Phelma
+Disciplina de Algoritmos - Filière SEOC
+Author: Gabriel Goulart Müller
+Data 16/09/2024
+
+Travail Dirigé 1 - TD1
+Generic Types - Genericité par generation de code
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

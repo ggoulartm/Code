@@ -31,6 +31,10 @@ table_t table_append(void* e, table_t tab) {
 }
 
 void table_delete(table_t table) {
+  for(int i = 0; i<table->actual_size; i++){
+      //table->delete_data(table->data[i]);
+  }
+    free(table->data);
     free(table);
 }
 
@@ -48,6 +52,7 @@ void table_fprint(table_t table, FILE *fp) {
 
 void table_print(table_t table) {
     table_fprint(table,stdout);
+    printf("\n");
 }
 
 table_t table_insertat(int i, void *e, table_t table) {
