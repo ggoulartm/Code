@@ -11,8 +11,8 @@ int main() {
   table_t t1 = table_new(1000,NULL,NULL,NULL);
   double *x;
   int i,j,pos,nb;
-    x= malloc(sizeof(*x));
   for (j=0; j<NBTESTS; j++) {
+        x= malloc(sizeof(*x));
     switch(random() % NBCAS) {
       case 0: 
       case 1:
