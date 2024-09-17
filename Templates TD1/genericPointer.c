@@ -23,10 +23,10 @@ table_t table_new(int n, void* (*delete_data)(void*), int (*equal_data)(void*,vo
   return ptab;
 }
 
-table_t table_append(void **e, table_t tab) {
+table_t table_append(void* e, table_t tab) {
     if (tab==NULL) return NULL;
+    tab->data[tab->actual_size]=e;
     tab->actual_size++;
-    tab->data[tab->actual_size-1]=e;
     return tab;
 }
 
@@ -37,15 +37,20 @@ void table_delete(table_t table) {
 void table_fprint(table_t table, FILE *fp) {
     if (table==NULL) return;
     int i; 
-      for(i=0;i<table->actual_size; i++)
-        fprintf(fp,"%.2lf ",table->data[i]);
+    double* px;
+    px= malloc(sizeof(*px));
+    *px = random() % 100;
+      for(i=0;i<table->actual_size; i++){
+        px=(double*)table->data[i];
+        fprintf(fp,"%.2lf ",*px);
+      }
 }
 
 void table_print(table_t table) {
     table_fprint(table,stdout);
 }
 
-table_t table_insertat(int i, void **e, table_t table) {
+table_t table_insertat(int i, void *e, table_t table) {
     if (table==NULL) return NULL;
     if (i < 0 && i >= table->actual_size) return NULL;
     table->data[i]=e;
