@@ -18,12 +18,12 @@ Le langage de programmation sera le langage C sous linux, les outils utiles sont
 
 ### Programme
 
-Séance 1,2 : Tableaux et généricité
-Séance 3,4 : Tableaux redimensionnables, lancement projet
-Séance 5,6 : Listes, Piles/Files
-Séance 7,8 : Ensembles et Tables de hachage
-Séance 9,10 : Tas et Tris
-Séance 11,12 : Structures arborescentes par partage de préfixe (Arbres Dictionnaires, Trie, Arbre Patricia)
-Séance 13,14 : Partage de suffixe et Projet
-Séance 15,16 : Arbres de Recherche et Arbres équilibrés
-Séance 17,18 : Soutenance de projet
+1. Séance 1,2 : Tableaux et généricité
+2. Séance 3,4 : Tableaux redimensionnables, lancement projet
+3. Séance 5,6 : Listes, Piles/Files
+4. Séance 7,8 : Ensembles et Tables de hachage
+5. Séance 9,10 : Tas et Tris
+6. Séance 11,12 : Structures arborescentes par partage de préfixe (Arbres Dictionnaires, Trie, Arbre Patricia)
+7. Séance 13,14 : Partage de suffixe et Projet
+8. Séance 15,16 : Arbres de Recherche et Arbres équilibrés
+9. Séance 17,18 : Soutenance de projet
