@@ -1,4 +1,4 @@
-# Code
+# Algorithmiques 
 
 ## Page web du cours "Algorithmique et Programmation : Mise à Niveau" (ou APMAN).
 
