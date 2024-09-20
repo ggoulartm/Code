@@ -10,7 +10,8 @@ Generic Types - Tableaux redimensionnables
 
 #include "genericVector.h"
 
-    vect_t vect_new(unsigned int n) {
+    vect_t vect_new(unsigned int n, void (*print_data)(void*,FILE*), 
+            void* (*delete_data)(void*),int (*equal_data)(void*,void*)) {
         vect_t vectTable;
             // Allocation de la structure
         if ( (vectTable=malloc(sizeof(*vectTable))) ==NULL)
@@ -25,7 +26,13 @@ Generic Types - Tableaux redimensionnables
             free(vectTable);
             return NULL;
         }
-            // Fin creation et retour
+
+        //Mise a jour des metodes
+        vectTable->delete_data=delete_data;
+        vectTable->equal_data=equal_data;
+        vectTable->fprint_data=print_data;
+
+        // Fin creation et retour
         return vectTable;
     }
 
@@ -69,7 +76,26 @@ Generic Types - Tableaux redimensionnables
     }
 
     vect_t vect_delete(vect_t table)  {
+        if (table==NULL) return NULL;
+            // A t on passe une fonction de liberation des elements ?
+        if (table->delete_data)
+            // On libere les elements grace à notre pointeur
+            for (int i=0; i<table->actual_size; i++)
+            table->delete_data(table->data[i]);
+
+        // On libere le tableau et la structure allouée
         free(table->data);
         free(table);
         return NULL;
+    }
+
+    int vect_lookup(vect_t table, double x) {
+        int pos = -1;
+        void* y = &x;
+        for(int i=0; i<table->actual_size; i++) {
+            if(table->equal_data(table->data[i],y)) {
+                return pos;
+            }
+        }
+        return pos;
     }
