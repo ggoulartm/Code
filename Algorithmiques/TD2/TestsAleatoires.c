@@ -40,17 +40,17 @@ int main() {
         break;
       case 1: 
         x = random() % 100;
-        printf("Recherce de l'element: %lf \n",x);
+        printf("Recherce de l'element: %.2lf \n",x);
         int pos = vect_lookup(t1,x); 
         if (pos != -1){
-            printf("Element %lf trouvé à la position %d \n",x, pos);
+            printf("Element %.2lf trouvé à la position %d \n",x, pos);
             break;
         }
-        printf("Element pas trouvé");
+        printf("Element pas trouvé \n");
         break;
       case 2:
         x = random() % 100;
-        printf("Append de: %lf \n",x);
+        printf("Append de: %.2lf \n",x);
         vect_append(x,t1);
         break;
       case 3:
@@ -62,7 +62,7 @@ int main() {
     }
     for(i=0; i<t1->actual_size; i++){
         px=(double*)t1->data[i];
-        printf("%lf ",*px);
+        printf("%.2lf ",*px);
     }
     puts("");
   }
