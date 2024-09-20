@@ -70,7 +70,8 @@ Generic Types - Tableaux redimensionnables
 
     vect_t vect_remove_nlast(int n, vect_t table)  {
         for(int i = 0; i<n; i++){
-            table = vect_remove_at(table, table->actual_size);
+                if(table->actual_size==0) return table;
+                table->actual_size--;
         }
        return table;
     }
@@ -91,9 +92,9 @@ Generic Types - Tableaux redimensionnables
 
     int vect_lookup(vect_t table, double x) {
         int pos = -1;
-        void* y = &x;
         for(int i=0; i<table->actual_size; i++) {
-            if(table->equal_data(table->data[i],y)) {
+            if(table->equal_data(table->data[i],&x)) {
+                pos=i;
                 return pos;
             }
         }

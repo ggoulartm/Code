@@ -1,12 +1,24 @@
 #include "genericVector.c"
+#include "time.h"
 
-#define NBTESTS 10000
+#define NBTESTS 100000
 #define NBCAS 4
+
+double abs_double(double a, double b) {
+    if (a>b) {
+        return a-b;
+    }
+    return b-a;
+}
 
 int equal_double(void* a, void* b) {
     int i;
     //i=calloc(1,sizeof(int));
-    if ((double*)a==(double*)b) {
+    double *c;
+    double *d;
+    c=(double*)a;
+    d=(double*)b;
+    if (abs_double(*c,*d)<=1E-9) {
         i=1;
         return i;
     }
@@ -29,7 +41,7 @@ int main() {
   int i,j,nb;
   double *px;
   px=calloc(1,sizeof(double));
-
+    srand( time(NULL) );
   for (j=0; j<NBTESTS; j++) {
     switch(random() % NBCAS) {
       case 0: 
@@ -54,8 +66,8 @@ int main() {
         vect_append(x,t1);
         break;
       case 3:
-        if(t1->actual_size==0) break;
-        nb=random()%(t1->actual_size);
+        nb=random()%(t1->actual_size+1);
+        if(nb==0) break;
         printf("Suppression des %d dernieres valeurs \n",nb);
         t1=vect_remove_nlast(nb,t1);
         break;
