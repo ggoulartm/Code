@@ -21,7 +21,7 @@ Generic Types - Tableaux redimensionnables
         vectTable->actual_size=0;
 
         // Allocation des données
-        if ( (vectTable->data=calloc(n,sizeof(*(vectTable->data)))) ==NULL) {
+        if ( (vectTable->data=calloc(n,sizeof(*(vectTable->data)))) == NULL) {
             free(vectTable);
             return NULL;
         }
@@ -69,9 +69,6 @@ Generic Types - Tableaux redimensionnables
     }
 
     vect_t vect_delete(vect_t table)  {
-        for(int i = 0; i<table->actual_size; i++){
-            //table->delete_data(table->data[i]);
-        }
         free(table->data);
         free(table);
         return NULL;

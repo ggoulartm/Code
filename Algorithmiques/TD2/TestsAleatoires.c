@@ -18,7 +18,7 @@ int main() {
       case 2:
         x = random() % 100;
         printf("Append de: %lf \n",x);
-        t1=vect_append(x,t1);
+        vect_append(x,t1);
         break;
       case 3:
         nb=random()%(t1->actual_size+1);
