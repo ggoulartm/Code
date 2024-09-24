@@ -15,6 +15,7 @@ class Rational {
         }
         this.nom = nom;
         this.denom = denom;
+        this.reduce();
     }
     public String toString() {
 
@@ -29,12 +30,6 @@ class Rational {
     public void mult(Rational r) {
         this.nom = this.nom * r.nom;
         this.denom = this.denom * r.denom;
-        if (this.nom != 0 &&
-                this.denom % this.nom == 0 &&
-                this.nom < this.denom) {
-            this.nom = this.nom / this.nom;
-            this.denom = this.denom / this.nom;
-        }
         this.reduce();
     }
 
@@ -49,17 +44,8 @@ class Rational {
         this.reduce();
     }
 
-    public boolean entier() {
-        return this.denom < this.nom && this.nom % this.denom == 0;
-    }
-
     public void reduce() {
-        if(!entier()) {
-            pgcd(this.nom, this.denom);
-            return;
-        }
-        this.nom = this.nom / this.denom;
-        this.denom = this.denom / this.denom;
+        pgcd(this.nom, this.denom);
     }
 
     public int pgcd(int a, int b) {
