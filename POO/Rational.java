@@ -29,7 +29,9 @@ class Rational {
     public void mult(Rational r) {
         this.nom = this.nom * r.nom;
         this.denom = this.denom * r.denom;
-        if (this.denom % this.nom == 0 && this.nom < this.denom && this.nom != 0) {
+        if (this.nom != 0 &&
+                this.denom % this.nom == 0 &&
+                this.nom < this.denom) {
             this.nom = this.nom / this.nom;
             this.denom = this.denom / this.nom;
         }
@@ -72,7 +74,7 @@ class Rational {
     }
 
     public float Real() {
-        return this.nom/this.denom;
+        return (float)this.nom/(float)this.denom;
     }
 }
 

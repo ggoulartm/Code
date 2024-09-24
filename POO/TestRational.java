@@ -22,10 +22,10 @@ public class TestRational {
         System.out.println("To be added: "+rational2);
         rational2.add(rational);
         System.out.println("Result: "+rational2);
-        if(rational2.Real()==z+rational.Real()){
+        if(rational2.Real()==(z+rational.Real())){
             System.out.println("----------- SUCCESS -----------");
         } else {
-            System.out.println("Expected result: " + z*rational.Real()
+            System.out.println("Expected result: " + (z+rational.Real())
                     + "\nInsted we got: " + rational2.Real());
             System.out.println("----------- FAILURE -----------");
         }
@@ -59,11 +59,11 @@ public class TestRational {
         System.out.println("To be added: "+rational2);
         System.out.println("To be added: "+rational4);
         rational4.add(rational2);
-        System.out.println("Result: "+rational2);
+        System.out.println("Result: "+rational4);
         if(rational4.Real()==(z+rational2.Real())){
             System.out.println("----------- SUCCESS -----------");
         } else {
-            System.out.println("Expected result: " + z*rational2.Real() +
+            System.out.println("Expected result: " + z+rational2.Real() +
                     "\nInsted we got: " + rational4.Real());
             System.out.println("----------- FAILURE -----------");
         }
@@ -78,7 +78,7 @@ public class TestRational {
         System.out.println("To be multiplied: "+rational3);
         System.out.println("To be multiplied: "+rational5);
         rational5.mult(rational3);
-        System.out.println("Result: "+rational3);
+        System.out.println("Result: "+rational5);
         if(rational5.Real()==z*rational3.Real()){
             System.out.println("----------- SUCCESS -----------");
         } else {
