@@ -60,6 +60,6 @@ public class TestRational {
             System.out.println("Result: "+rational1);
             Test((z*rational2.Real()),rational1.Real());
             System.out.println("----------- Test "+i+" ended -----------\n\n");
-        }
+         }
     }
 }
