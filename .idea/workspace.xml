@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="exercices until 7 - test cases">
-      <change afterPath="$PROJECT_DIR$/POO/TestVector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Vector.java" afterDir="false" />
+    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="TD2 - Vecteurs">
+      <change afterPath="$PROJECT_DIR$/POO/ExtensibleVector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/TestRational.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO/TestRational.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/TestVector.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO/TestVector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO/Vector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,7 @@
       <workItem from="1726738290315" duration="2629000" />
       <workItem from="1727188135800" duration="10016000" />
       <workItem from="1727206636259" duration="3472000" />
-      <workItem from="1727265866889" duration="2079000" />
+      <workItem from="1727265866889" duration="6313000" />
     </task>
     <task id="LOCAL-00001" summary="updating repo">
       <option name="closed" value="true" />
@@ -156,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727210125362</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="TD2 - Vecteurs">
+      <option name="closed" value="true" />
+      <created>1727268705341</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727268705341</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +176,7 @@
     <MESSAGE value="exercices until 7" />
     <MESSAGE value="exercices until 7 - fixing errors in test cases" />
     <MESSAGE value="exercices until 7 - test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="exercices until 7 - test cases" />
+    <MESSAGE value="TD2 - Vecteurs" />
+    <option name="LAST_COMMIT_MESSAGE" value="TD2 - Vecteurs" />
   </component>
 </project>
