@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "MLTable": "yaml",
+        "genericpointer.h": "c",
+        "array": "c",
+        "vector": "c",
+        "string": "c",
+        "string_view": "c"
+    }
+}
