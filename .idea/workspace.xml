@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="TD2 - Vecteurs - complet">
-      <change beforePath="$PROJECT_DIR$/POO/ExtensibleVector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/Rational.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/Rational.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/TestRational.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/TestRational.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/TestVector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/POO/Vector.java" beforeDir="false" />
-    </list>
+    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="TD3 - POO/References" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,6 +87,7 @@
       <workItem from="1727206636259" duration="3472000" />
       <workItem from="1727265866889" duration="6681000" />
       <workItem from="1727980889474" duration="176000" />
+      <workItem from="1727981076275" duration="1529000" />
     </task>
     <task id="LOCAL-00001" summary="updating repo">
       <option name="closed" value="true" />
@@ -176,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727374167893</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="TD3 - POO/References">
+      <option name="closed" value="true" />
+      <created>1727984767184</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1727984767184</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +191,7 @@
     <MESSAGE value="exercices until 7 - test cases" />
     <MESSAGE value="TD2 - Vecteurs" />
     <MESSAGE value="TD2 - Vecteurs - complet" />
-    <option name="LAST_COMMIT_MESSAGE" value="TD2 - Vecteurs - complet" />
+    <MESSAGE value="TD3 - POO/References" />
+    <option name="LAST_COMMIT_MESSAGE" value="TD3 - POO/References" />
   </component>
 </project>
