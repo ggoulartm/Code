@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="TD2 - Vecteurs - complet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/ExtensibleVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Rational.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Rational.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/TestRational.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/TestRational.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/TestVector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Vector.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +94,7 @@
       <workItem from="1727188135800" duration="10016000" />
       <workItem from="1727206636259" duration="3472000" />
       <workItem from="1727265866889" duration="6681000" />
+      <workItem from="1727980889474" duration="176000" />
     </task>
     <task id="LOCAL-00001" summary="updating repo">
       <option name="closed" value="true" />
