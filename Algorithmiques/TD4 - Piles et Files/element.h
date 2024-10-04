@@ -1,3 +1,3 @@
 #include <stdlib.h>
 
-typedef double* element_t;
+typedef double element_t;

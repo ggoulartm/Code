@@ -96,10 +96,6 @@ void list_fprintf(list_t l, FILE* fp){
     if (l==NULL) return;
     return l->fprint_data(l,fp);
 }
-void list_printf(list_t l){
-    if(l==NULL) return;
-    return l->fprint_data(l,stdout);
-}
 
 // Libère toute la liste et retourne une liste vide
 // Libere les elements avec delete_data si la fonction existe
@@ -128,12 +124,17 @@ list_t list_add_last(void* e, list_t l){
 }
 
 link_t last(link_t l){
-    link_t link = l->next;
+    link_t link = l;
     while(link->next != NULL){
         link = link->next;
     }
     return link;
 }
+
+void* list_last(list_t l){
+    return last(l->data)->data;
+}
+
 //Suppression en queue, eventuellement
 list_t list_del_last(list_t l ){
     l->delete_data(last(l->data));
@@ -176,15 +177,23 @@ list_t list_remove(void* param, list_t l){
   // Les visiteurs
 void list_simple_visit(list_t l, void (*exec)(void*,void*), void* param){
     link_t link = l->data;
-    while(link->next != NULL){
+    while(link->data != NULL){
         exec(link->data,param);
+        if(link->next == NULL) break;
         link=link->next;
     }
 }
 void list_visit(list_t l, int (*exec_on_value)(void*,void*), int (*exec_on_link)(list_t,void*),void* param){
     link_t link = l->data;
-    while(link->next != NULL){
+    while(link->data != NULL){
         if(exec_on_value(link->data,param)!=0) exec_on_link(l,link->data);
+        if(link->next == NULL) break;
         link=link->next;
     }
+}
+
+void list_printf(list_t l){
+    if(l==NULL) return;
+    list_simple_visit(l,l->fprint_data,stdout);
+    printf("\n");
 }
