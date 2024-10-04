@@ -108,13 +108,6 @@ list_t list_delete(list_t l){
     return l->delete_data(l->data);
 }
 
-// Ajoute en queue de liste, eventuellement
-list_t list_add_last(void* e, list_t l){
-    link_t link = link_add_last(e,l->data);
-    if(link==NULL) return NULL;
-    l->size++;
-    return l;
-}
 link_t link_add_last(void* e, link_t link){
     while(link->next != NULL){
         link = link->next;
@@ -125,6 +118,15 @@ link_t link_add_last(void* e, link_t link){
     link->next->data=e;
     return link;
 }
+
+// Ajoute en queue de liste, eventuellement
+list_t list_add_last(void* e, list_t l){
+    link_t link = link_add_last(e,l->data);
+    if(link==NULL) return NULL;
+    l->size++;
+    return l;
+}
+
 link_t last(link_t l){
     link_t link = l->next;
     while(link->next != NULL){

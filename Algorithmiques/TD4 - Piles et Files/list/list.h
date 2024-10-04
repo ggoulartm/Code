@@ -8,7 +8,7 @@ Travail Dirigé 3 - TD3
 Generic Types - Listes et Listes génériques
 */
 
-#include <list.c>
+#include "list.c"
 
 
 // Creation d'une liste vide, avec les pointeurs de fonctions utiles
