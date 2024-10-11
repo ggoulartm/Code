@@ -1,18 +1,22 @@
 public class Animal {
-    private String specie;
+    private String name;
     private int age;
 
-    public Animal(String sp, int ag, String rc){
-        this.specie=sp;
-        this.age=ag;
+    public Animal(String name, int age){
+        this.name = name;
+        this.age = age;
     }
+
     public void crier(){
-        System.out.println("crier");
+        System.out.println("crier:");
+    }
+    public String getCouleurPlumes(){
+        return "Pas de plumes la";
     }
     protected void setAge(int ag){
         this.age=ag;
     }
-    protected void setSpecie(String sp){
-        this.specie=sp;
+    protected void setName(String sp){
+        this.name=sp;
     }
 }

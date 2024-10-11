@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="Organizing dir" />
+    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="Aula 4 - POO">
+      <change afterPath="$PROJECT_DIR$/POO/Aula 4/src_zoo/Vache.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Aula 4/src_zoo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO/Aula 4/src_zoo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Aula 4/src_zoo/Canard.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO/Aula 4/src_zoo/Canard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POO/Aula 4/src_zoo/TestHeritage.java" beforeDir="false" afterPath="$PROJECT_DIR$/POO/Aula 4/src_zoo/TestHeritage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemesExploitationConcurrence/CodeEtudiant/Client/CL.h" beforeDir="false" afterPath="$PROJECT_DIR$/SystemesExploitationConcurrence/CodeEtudiant/Client/CL.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemesExploitationConcurrence/CodeEtudiant/Serveur/Test/CL" beforeDir="false" afterPath="$PROJECT_DIR$/SystemesExploitationConcurrence/CodeEtudiant/Serveur/Test/CL" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,6 +98,8 @@
       <workItem from="1727980889474" duration="176000" />
       <workItem from="1727981076275" duration="1529000" />
       <workItem from="1727984837188" duration="69000" />
+      <workItem from="1728550388488" duration="2469000" />
+      <workItem from="1728561661685" duration="419000" />
     </task>
     <task id="LOCAL-00001" summary="updating repo">
       <option name="closed" value="true" />
@@ -186,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727984881054</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Aula 4 - POO">
+      <option name="closed" value="true" />
+      <created>1728550512787</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728550512787</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +221,7 @@
     <MESSAGE value="TD2 - Vecteurs - complet" />
     <MESSAGE value="TD3 - POO/References" />
     <MESSAGE value="Organizing dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="Organizing dir" />
+    <MESSAGE value="Aula 4 - POO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 4 - POO" />
   </component>
 </project>
