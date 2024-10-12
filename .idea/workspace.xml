@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="Aula 4 - POO">
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/BinaireMult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/BinairePlus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/Constante.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/Env.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/ExpAbstraite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/ExpBinaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/ExpUnaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/TestAffichageInfixe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/UnaireCos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/UnaireSin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/POO/Aula 5 - TP Abstraction/Variable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-    </list>
+    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="Aula 5 - Abstract Classes: &#10;-still getting error when passing ExpBinaire as a ExpAbstraite&#10;-the others tests are working" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -106,7 +91,7 @@
       <workItem from="1727984837188" duration="69000" />
       <workItem from="1728550388488" duration="2469000" />
       <workItem from="1728561661685" duration="419000" />
-      <workItem from="1728740425221" duration="4841000" />
+      <workItem from="1728740425221" duration="4956000" />
     </task>
     <task id="LOCAL-00001" summary="updating repo">
       <option name="closed" value="true" />
@@ -212,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728550512787</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Aula 5 - Abstract Classes: &#10;-still getting error when passing ExpBinaire as a ExpAbstraite&#10;-the others tests are working">
+      <option name="closed" value="true" />
+      <created>1728745398234</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728745398235</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +222,7 @@
     <MESSAGE value="TD3 - POO/References" />
     <MESSAGE value="Organizing dir" />
     <MESSAGE value="Aula 4 - POO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aula 4 - POO" />
+    <MESSAGE value="Aula 5 - Abstract Classes: &#10;-still getting error when passing ExpBinaire as a ExpAbstraite&#10;-the others tests are working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aula 5 - Abstract Classes: &#10;-still getting error when passing ExpBinaire as a ExpAbstraite&#10;-the others tests are working" />
   </component>
 </project>
