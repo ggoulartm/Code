@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="Aula 5 - Abstract Classes: &#10;-still getting error when passing ExpBinaire as a ExpAbstraite&#10;-the others tests are working" />
+    <list default="true" id="067dec3b-f6e9-4eff-9a0c-e287b6339e5c" name="Changes" comment="Aula 5 - Abstract Classes: &#10;-still getting error when passing ExpBinaire as a ExpAbstraite&#10;-the others tests are working">
+      <change beforePath="$PROJECT_DIR$/Algorithmiques/TD5 - Hash/hashlset.c" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithmiques/TD5 - Hash/hashlset.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +47,7 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Unnamed" type="Application" factoryName="Application">
       <module name="Code" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/POO" />
       <method v="2">
@@ -92,6 +94,7 @@
       <workItem from="1728550388488" duration="2469000" />
       <workItem from="1728561661685" duration="419000" />
       <workItem from="1728740425221" duration="4956000" />
+      <workItem from="1728806023645" duration="205000" />
     </task>
     <task id="LOCAL-00001" summary="updating repo">
       <option name="closed" value="true" />

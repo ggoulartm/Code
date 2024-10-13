@@ -30,14 +30,17 @@
             return hashlset;
         }
 
+    // Fonction auxiliaire pour la destruction de l'ensemble
+    link_t link_next(link_t link, void* (*dosomething)(void*)){
+        if(link->next==NULL) return link;
+        dosomething(link->next);
+        link_next(link->next,dosomething);
+    }
+
     // Destruction de l'ensemble
     hashlset_t hashlset_delete(hashlset_t table){
         link_t link=table->data;
-        while(link!=NULL){
-            link_t next=link->next;
-            table->delete_key(link->data);   
-            link=next;
-        }
+        link_next(link,table->delete_key);
         free(table->data);
     }
     
