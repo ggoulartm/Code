@@ -13,15 +13,15 @@ Generic Types - Tableaux redimensionnables
 
 typedef struct _vect_t {
   void* * data;
-  unsigned int max_size;
-  unsigned int actual_size;
+  int max_size;
+  int actual_size;
 
   void (*fprint_data)(void*,FILE*);
   void* (*delete_data)(void*);
   int (*equal_data)(void*,void*);
   }  * vect_t;
 
-    vect_t vect_new(unsigned int n,void (*print_data)(void*,FILE*),
+    vect_t vect_new(int n,void (*print_data)(void*,FILE*),
           void* (*delete_data)(void*),int (*equal_data)(void*,void*)) ;
     vect_t vect_append(void* e, vect_t table) ;
     void vect_swap(vect_t table, int i, int j) ;

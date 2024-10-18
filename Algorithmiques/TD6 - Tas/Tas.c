@@ -62,7 +62,7 @@ int heap_delete_extrema(heap_t tas){
   // Fonction de vérification entre pere et fils
 int heap_verification(heap_t tas) {
     int i;
-    for (i=0; i< tas->actual_size/2; i++) {
+    for (i=0; i < tas->actual_size/2; i++) {
     if (tas->equal_data(tas->data+i,tas->data+HEAP_LEFTSON(i))<0) 
         return i;
       if (HEAP_RIGHTSON(i)<tas->actual_size && 

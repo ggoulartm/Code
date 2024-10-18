@@ -11,7 +11,7 @@ SRCS = TasTest.c Tas.c vect.c
 OBJS = $(SRCS:.c=.o)
 
 # Executable
-TARGET = TasTest
+TARGET = TasPkg
 
 # Default rule
 all: $(TARGET)
