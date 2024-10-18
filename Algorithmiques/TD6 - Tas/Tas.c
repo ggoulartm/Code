@@ -20,6 +20,21 @@
 */
 #include "Tas.h"
 
+int equal_data(void* a, void* b){
+    int Q = *((int*)a);
+    int W = *((int*)b);
+    if(Q == W) return 1;
+    return 0;
+}
+
+void print_data(void* a, FILE* fp){
+    fprintf(fp,"%d ",*((int*)a));
+}
+
+void delete_data(void* a){
+    //free(a);
+    return a;
+}
 // Creation d'un tas de n elements
 heap_t heap_new(unsigned int n,void (*print_data)(void*,FILE*),
       void* (*delete_data)(void*),int (*equal_data)(void*,void*)) 
@@ -28,9 +43,14 @@ heap_t heap_new(unsigned int n,void (*print_data)(void*,FILE*),
         return heap;
       }
     
+// Creation d'un tas de n elements default
+heap_t heap_newD(unsigned int n) {
+    heap_t heap = vect_new(n,print_data,delete_data,equal_data);
+    return heap;
+}
 // Verification si le tas est vide
 int heap_is_empty(heap_t tas){
-    if(tas->actual_size == 0) return 1;
+    if(tas==NULL || tas->actual_size == 0) return 1;
     return 0;
 }
 
@@ -79,10 +99,30 @@ heap_t heap_delete(heap_t tas){
 
   // Affichage du tas
 void heap_printf(heap_t tas) {
-    vect_fprintf(tas,stdout);
+    if(tas==NULL) return;
+    tas->fprint_data(tas->data[0],stdout);
+    printf("\n");
+    heap_printfils(tas,0,1,stdout);
+}
+
+    // Affichage des fils
+void heap_printfils(heap_t tas, int i, int j,FILE* fp) {
+    for(int k=i;k<=i+j;k++){
+        if(HEAP_LEFTSON(k)<tas->actual_size && tas->data[HEAP_LEFTSON(k)!=NULL]){
+            tas->fprint_data(tas->data[HEAP_LEFTSON(i)],fp);
+        }
+        if(HEAP_RIGHTSON(k)<tas->actual_size && tas->data[HEAP_RIGHTSON(k)!=NULL]){
+            tas->fprint_data(tas->data[HEAP_RIGHTSON(i)],fp);
+        }
+    }
+    printf("\n");
+    if(HEAP_LEFTSON(i)<tas->actual_size) heap_printfils(tas,HEAP_LEFTSON(i),HEAP_RIGHTSON(j),fp);
 }
 
 // Affichage du tas dans un fichier
 void heap_fprintf(heap_t tas,FILE* fp) {
-    vect_fprintf(tas,fp);
+    if(tas==NULL) return;
+    tas->fprint_data(tas->data[0],fp);
+    heap_printfils(tas,0,0,fp);
+    printf("\n");
 }

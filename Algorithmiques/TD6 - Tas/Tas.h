@@ -18,6 +18,8 @@ typedef vect_t heap_t;
   // Creation d'un tas de n elements
 heap_t heap_new(unsigned int n,void (*print_data)(void*,FILE*),
       void* (*delete_data)(void*),int (*equal_data)(void*,void*)) ;
+        // Creation d'un tas de n elements default
+heap_t heap_newD(unsigned int n) ;
 int heap_is_empty(heap_t tas);
   // Ajout d'un element avec redimensionnement si nécessaire
 int heap_add(void* valeur, heap_t tas);

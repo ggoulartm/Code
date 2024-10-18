@@ -117,6 +117,7 @@ Generic Types - Tableaux redimensionnables
     }
 
     int vect_lookup(vect_t table, void* x) {
+        if (table==NULL) return -1;
         int pos = -1;
         for(int i=0; i<table->actual_size; i++) {
             if(table->equal_data(table->data[i],x)) {

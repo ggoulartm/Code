@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include "Tas.h"
 
+
+
 int main() {
     // Test heap_new and heap_is_empty
-    heap_t tas = heap_new(10, NULL, NULL, NULL);
+    heap_t tas = heap_newD(10);
     printf("Is heap empty? %d\n", heap_is_empty(tas));
 
     // Test heap_add
-    int value1 = 10;
-    int value2 = 20;
-    int value3 = 30;
-    heap_add(&value1, tas);
-    heap_add(&value2, tas);
-    heap_add(&value3, tas);
+    // Add random values to the heap
+    int random_values[] = {20, 2, 15, 10, 8, 7, 6, 9, 5, 1};
+    
+    for(int i = 0; i < 10; i++) {
+        heap_add(&random_values[i], tas);
+    }
+
+    // Print heap
+    heap_printf(tas);
 
     // Test heap_get_extrema
     int* extrema = heap_get_extrema(tas);
