@@ -12,7 +12,7 @@ Generic Types - Tableaux redimensionnables
 
     vect_t vect_redmen(vect_t table, int up);
 
-    vect_t vect_new(unsigned int n, void (*print_data)(void*,FILE*), 
+    vect_t vect_new(int n, void (*print_data)(void*,FILE*), 
             void* (*delete_data)(void*),int (*equal_data)(void*,void*)) {
         vect_t vectTable;
             // Allocation de la structure
