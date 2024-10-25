@@ -30,12 +30,17 @@ main() { clock_t avant, apres;
     memcpy(t2,t1,k*sizeof(*t1));
 
                 /* Tri par quick sort , version de la bibliotheque C */
-    avant=clock();      qsort(t1,k,sizeof(*t1),compar);      apres=clock();
+    avant=clock();      
+    qsort(t1,k,sizeof(*t1),compar);      
+    apres=clock();
+
         /* Le temps de qsort est donne par apres-avant/CLOCKS_PER_SEC. */
     temps1=((double)apres - avant)/CLOCKS_PER_SEC;
 
         /* Tri par ma fonction heap_sort*/
-    avant = clock();      heap_sort(t2);      apres = clock();
+    avant = clock();      
+    hsort(t2,k);
+    apres = clock();
     temps2=((double)apres - avant)/CLOCKS_PER_SEC;
 
         /* Affichage des temps des 2 tris dans le fichier */

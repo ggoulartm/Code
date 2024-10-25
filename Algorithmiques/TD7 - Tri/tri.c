@@ -109,7 +109,6 @@ void hsort(int arr[], int n) {
     }
 }
 
-
 void heap_sort(vect_t tab) {
     hsort(tab->data, tab->actual_size);
 }

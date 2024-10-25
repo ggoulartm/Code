@@ -15,4 +15,5 @@
     void merge_sort(vect_t tab);
 
       /* Tri par tas du tableau `tab`*/
+    void hsort(int arr[], int n);
     void heap_sort(vect_t tab);
