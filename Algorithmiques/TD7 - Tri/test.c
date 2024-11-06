@@ -23,32 +23,32 @@ main() { clock_t avant, apres;
 
     /* k est le nombre d’elements a trier */
     for (k=1; k<=total_number; k+=k) {
+            /* génération des nombres aléatoires et copie dans le deuxieme tableau */
+        t1=randominttabgeneration(k);
+        t2=malloc(k*sizeof(t2));
+        memcpy(t2,t1,k*sizeof(*t1));
 
-        /* génération des nombres aléatoires et copie dans le deuxieme tableau */
-    t1=randominttabgeneration(k);
-    t2=malloc(k*sizeof(t2));
-    memcpy(t2,t1,k*sizeof(*t1));
+                    /* Tri par quick sort , version de la bibliotheque C */
+        avant=clock();      
+        qsort(t1,k,sizeof(*t1),compar);      
+        apres=clock();
 
-                /* Tri par quick sort , version de la bibliotheque C */
-    avant=clock();      
-    qsort(t1,k,sizeof(*t1),compar);      
-    apres=clock();
+            /* Le temps de qsort est donne par apres-avant/CLOCKS_PER_SEC. */
+        temps1=((double)apres - avant)/CLOCKS_PER_SEC;
 
-        /* Le temps de qsort est donne par apres-avant/CLOCKS_PER_SEC. */
-    temps1=((double)apres - avant)/CLOCKS_PER_SEC;
+            /* Tri par ma fonction heap_sort*/
+        avant = clock();      
+        //Qsort(t2,0,k);
+        hsort(t2,k);
+        apres = clock();
+        temps2=((double)apres - avant)/CLOCKS_PER_SEC;
 
-        /* Tri par ma fonction heap_sort*/
-    avant = clock();      
-    hsort(t2,k);
-    apres = clock();
-    temps2=((double)apres - avant)/CLOCKS_PER_SEC;
-
-        /* Affichage des temps des 2 tris dans le fichier */
-    if (fp) {
-        fprintf(fp,"%d\t%lf\t%lf\n", k, temps1, temps2);
-    }
-    free(t1);
-    free(t2);
+            /* Affichage des temps des 2 tris dans le fichier */
+        if (fp) {
+            fprintf(fp,"%d\t%lf\t%lf\n", k, temps1, temps2);
+        }
+        free(t1);
+        free(t2);
     }
 
 

@@ -5,6 +5,7 @@
       tri recursif du tableau `tab` entre les indices `gauche`et `droite`
     void quick_sortrec(vect_t tab, int gauche, int droit);
       Tri du tableau `tab` entier (fonction wrapper cachant les autres paramètres à l'utilisateur) */
+    void Qsort(int arr[], int low, int high) ;
     void quicksort(vect_t tab);
 
       /*Fusion des 2 demi tableaux triés de `tab` compris entre les indices `gauche` et `droit` à l'aide du tableau `tmp`*/
