@@ -3,7 +3,7 @@
 
 // Function to export a node and its connections to the .dot file
 void export_tree_to_dot(FILE* file, radix_t node) {
-    if (!node) return;
+    if (node==NULL || *node->value == '\0') return;
 
     // Write the current node
     fprintf(file, "  \"%s\" [label=\"%s\"];\n", node->value, node->value);

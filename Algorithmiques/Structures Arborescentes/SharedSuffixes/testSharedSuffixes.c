@@ -1,26 +1,17 @@
 #include "dotGraph.h"
+#include <unistd.h> // For sleep()
 
 void debug_tree(radix_t node, int level) {
-    if (!node) return;
+    if (node==NULL || *node->value == '\0') return;
 
     for (int i = 0; i < level; i++) printf("  "); // Indent based on depth
     printf("%s\n", node->value);
 
+    sleep(1); // Sleep for 1 second to see the tree building step by step
     // Recursively debug sons and brothers
     if (node->sons) debug_tree(node->sons, level + 1);
     if (node->brothers) debug_tree(node->brothers, level);
 }
-
-
-void reset_visited_flag(radix_t node) {
-    if (!node) return;
-    node->visited = 0;
-    reset_visited_flag(node->sons);
-    reset_visited_flag(node->brothers);
-}
-
-
-
 
 int main() {
     // Create and populate the Patricia tree

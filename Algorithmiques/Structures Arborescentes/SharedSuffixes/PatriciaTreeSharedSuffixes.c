@@ -5,13 +5,14 @@ radix_t end_of_word_node = NULL;
 
 // Function to create a new node
 radix_t create_radix_node(const char* value) {
+    printf("Creating node: %s\n", value);
     radix_t node = (radix_t)malloc(sizeof(struct node_radix));
     if (!node) {
         perror("Failed to allocate memory for node");
         exit(EXIT_FAILURE);
     }
     node->value = strdup(value);  // Allocate and copy the value
-    node->sons = NULL;
+    node->sons = end_of_word_node; // Initialize the sons and brothers pointers
     node->brothers = NULL;
     return node;
 }
