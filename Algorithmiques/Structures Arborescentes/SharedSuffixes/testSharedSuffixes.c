@@ -7,7 +7,7 @@ void debug_tree(radix_t node, int level) {
     for (int i = 0; i < level; i++) printf("  "); // Indent based on depth
     printf("%s\n", node->value);
 
-    sleep(1); // Sleep for 1 second to see the tree building step by step
+    //sleep(1); // Sleep for 1 second to see the tree building step by step
     // Recursively debug sons and brothers
     if (node->sons) debug_tree(node->sons, level + 1);
     if (node->brothers) debug_tree(node->brothers, level);
@@ -27,6 +27,52 @@ int main() {
     add_word(&root, "vais");
     add_word(&root, "vas");
     add_word(&root, "vont");
+    add_word(&root, "parler");
+    add_word(&root, "partir");
+    add_word(&root, "parfait");
+    add_word(&root, "parfois");
+    add_word(&root, "parle");
+    add_word(&root, "cat");
+    add_word(&root, "dog");
+    add_word(&root, "fish");
+    add_word(&root, "bird");
+    add_word(&root, "apple");
+    add_word(&root, "banana");
+    add_word(&root, "grape");
+    add_word(&root, "cherry");
+    add_word(&root, "date");
+    add_word(&root, "elderberry");
+    add_word(&root, "abc");
+    add_word(&root, "abcd");
+    add_word(&root, "abcdef");
+    add_word(&root, "a");
+    add_word(&root, "repeat");
+    add_word(&root, "repeat");
+    add_word(&root, "repeat");
+    add_word(&root, "rain");
+    add_word(&root, "rainbow");
+    add_word(&root, "raincoat");
+    add_word(&root, "raindrop");
+    add_word(&root, "rainstorm");
+    add_word(&root, "rainy");
+    add_word(&root, "rainfall");
+    add_word(&root, "rainforest");
+    add_word(&root, "sun");
+    add_word(&root, "sunlight");
+    add_word(&root, "sunset");
+    add_word(&root, "sunrise");
+    add_word(&root, "sunshine");
+    add_word(&root, "racecar");
+    add_word(&root, "rotor");;
+    add_word(&root, "radar");
+    add_word(&root, "refer");
+    add_word(&root, "word1");
+    add_word(&root, "word2");
+    add_word(&root, "word10");
+    add_word(&root, "word20");
+    add_word(&root, "word100");
+    add_word(&root, "word200");
+
 
     // Call this function after building the tree to verify:
     debug_tree(root, 0);
