@@ -32,6 +32,13 @@ public class Job implements Comparable<Job> {
 
     @Override
     public int compareTo(Job other) {
+        if(this.status == JobStatus.PENDING && other.getStatus() != JobStatus.PENDING) {
+            return -1;
+        } else if(this.status != JobStatus.PENDING && other.getStatus() == JobStatus.PENDING) {
+            return 1;
+        } else if(this.status == JobStatus.PENDING && other.getStatus() == JobStatus.PENDING) {
+            return 0;
+        }
         return this.status.compareTo(other.getStatus());
     }
 
